@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/077eb41e85.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="header">
+	<div class="row">
+		<div class="col-3" style="text-align: left;">
+			<img src="asset/logo.png" class="img-fluid">
+		</div>
+		<div class="col-6">
+			<div class="input-group shadow-input" style="height: 60px;">
+				<div class="input-group-prepend">
+					<span class="input-group-text cust-search-icon" id="basic-addon1"><img src="asset/search-icon.png"></span>
+				</div>
+				<input type="text" class="form-control cust-search-input" style="height: 60px;" placeholder="Temukan Event, Wahana Wisata , Virtual Tour, Lain-lain." aria-label="Username" aria-describedby="basic-addon1">
+			</div>
+		</div>
+		<div class="col-3" style="text-align: right; margin: auto">
+			<button class="btn btn-purple">Login</button>
+		</div>
+	</div>
+</div>
+
+<div id="navbar">
+	<nav class="navbar navbar-expand-lg navbar-light">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse cust-navbar-style" id="navbarTogglerDemo01">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+		      <li class="nav-item">
+		        <a class="nav-link" id="cust-nav-link" href="javascript:void(0)"><img src="asset/paper-icon.png">&nbsp;&nbsp;&nbsp;Attraction</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" id="cust-nav-link" href="javascript:void(0)"><img src="asset/calendar-icon.png">&nbsp;&nbsp;&nbsp;Event</a>
+		      </li>
+		      <li class="nav-item">
+		         <a class="nav-link" id="cust-nav-link" href="javascript:void(0)"><img src="asset/vr-icon.png">&nbsp;&nbsp;&nbsp;Virtual Tour&nbsp;&nbsp;&nbsp;<span class="badge bg-purple">New</span></a>
+		      </li>
+		      <li class="nav-item">
+		         <a class="nav-link" id="cust-nav-link" href="javascript:void(0)" style="color: #F05A86; border-right:none; "><img src="asset/location-icon.png">&nbsp;&nbsp;&nbsp;Surabaya&nbsp;&nbsp;&nbsp;<img src="asset/arrow-down-icon.png"></a>
+		      </li>
+		    </ul>
+		    <a style="color: #fff; background: #7014A9;" class="navbar-brand" id="cust-nav-brand" href="javascript:void(0)"><img src="asset/plus-icon.png">&nbsp;&nbsp;&nbsp;Buat Tiket</a>
+	  </div>
+	</nav>
+  <!--
+  <a href="javascript:void(0)" style="color: #F05A86; border-right:none; "><img src="asset/location-icon.png">&nbsp;&nbsp;&nbsp;Surabaya&nbsp;&nbsp;&nbsp;<img src="asset/arrow-down-icon.png"></a>
+  <a href="javascript:void(0)" style="color: #fff; background: #7014A9; float: right;"><img src="asset/plus-icon.png">&nbsp;&nbsp;&nbsp;Buat Tiket</a> -->
+</div>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active cust-carousel-padding">
+      <img class="d-block w-100" src="asset/carousel-image-1.png" alt="First slide">
+    </div>
+    <div class="carousel-item cust-carousel-padding">
+      <img class="d-block w-100" src="asset/carousel-image-1.png" alt="First slide">
+    </div>
+    <div class="carousel-item cust-carousel-padding">
+      <img class="d-block w-100" src="asset/carousel-image-1.png" alt="First slide">
+    </div>
+  </div>
+</div>
+
+<div class="content">
+	<div class="row" style="margin-left: 10%;margin-right: 10%;">
+		<div class="col-lg-6 mb-4">
+			<h3 class="cust-title mb-4">Featured Event</h3>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+					<div class="card">
+					  <img class="card-img-top" src="asset/waterpark.png" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 style="font-weight: bold">New Normal Waterpark Callings</h4>
+					    <p class="preview-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer">
+					  	IDR 300.000
+					  </div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div class="col-lg-6 mb-4">
+			<h3 class="cust-title mb-4">Trending Event</h3>
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+					<div class="row">
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-1.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Jalur Perbankan</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-2.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Raja Ampat</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 20px">
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-3.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-4.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Jalur Perbankan</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+			    	<div class="row">
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-1.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Jalur Perbankan</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-2.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Raja Ampat</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="margin-top: 20px">
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-3.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="card shadow-card">
+							  <img class="card-img-top" src="asset/image-4.png" alt="Card image cap">
+							  <div class="card-body card-body-sm">
+							    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Jalur Perbankan</h6>
+							    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+							  </div>
+							  <div class="card-footer cust-preview-footer-sm">
+							  	IDR 300.000
+							  </div>
+							</div>
+						</div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<div class="row row-content">
+		<div class="col">
+			<h3 class="cust-title mb-4">Cara Baru Piknik Asyik di <font style="color: #C399E3">#NewNormal</font></h3>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-5.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Mangkunegaran Kita</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-6.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-7.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Kota Gede</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-8.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top:4em; background: #f4f4f4;">
+		<div class="col-6" style="text-align: center;">
+			<img src="asset/diver.png" class="img-fluid cust-img-size">
+		</div>
+		<div class="col-6">
+			<h3 class="cust-title cust-marg-top" style="margin-bottom: 20px">Atur Liburanmu Biar ga Ganggu Kerjaanmu</h3>
+			<p class="cust-font-size">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			</p>
+		</div>
+	</div>
+	<div class="row row-content">
+		<div class="col">
+			<h3 class="cust-title mb-4">Tempat asyik yang lagi hits nih <font style="color: #C399E3">#piknikAsik</font></h3>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-9.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Mangkunegaran Kita</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-10.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-11.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Kota Gede</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-12.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Tour Semeru</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row row-content">
+		<div class="col">
+			<h3 class="cust-title mb-4">Ada yang baru nih <font style="color: #C399E3">#baruApanih</font></h3>
+			<div class="row">
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-13.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Konser Battle Rap</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-14.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">LA Zone, Private Konser</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-15.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Konser BTS</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card shadow-card">
+					  <img class="card-img-top" src="asset/image-16.png" alt="Card image cap">
+					  <div class="card-body card-body-sm">
+					    <h6 style="font-weight: bold; font-size: 12px;">Virtual Konser Fourtwnty</h6>
+					    <p class="preview-content-sm">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+					  </div>
+					  <div class="card-footer cust-preview-footer-sm">
+					  	IDR 300.000
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="row" style="margin-top: 4em; margin-left: 10%;margin-right: 10%;">
+		<div class="col-sm-6 col-lg-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h6 class="cust-title" style="margin-bottom: 20px;">Langganan Newsletter</h6>
+					<p style="font-size: 0.8em">Jadi orang yang pertama tahu info & promosi wisata, event, terbaru, gratis</p>
+					<div class="form-group">
+				    	<input type="email" class="form-control" style="font-size: 0.8em; height: 40px;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan email">
+				  	</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h6 class="cust-title" style="margin-bottom: 20px;">Download DigiTiket Apps</h6>
+					<p><img src="asset/googleplay.png" class="img-fluid"></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-3 mb-3">
+			<h6 class="cust-title" style="margin-bottom: 20px;">Perusahaan</h6>
+			<p class="footer-links">Karir</p>
+			<p class="footer-links">Blog</p>
+			<p class="footer-links">Jadi Partner DigiTiket</p>
+			<p class="footer-links">DigiTiket Press Room</p>
+			<p class="footer-links">Brand Guidelines</p>
+			<p class="footer-links">Alamat Kantor</p>
+		</div>
+		<div class="col-sm-6 col-lg-3 mb-3">
+			<h6 class="cust-title" style="margin-bottom: 20px;">Bantuan</h6>
+			<p class="footer-links">Cara Pesan</p>
+			<p class="footer-links">FAQ</p>
+			<p class="footer-links">Kebijakan</p>
+			<p class="footer-links">Kebijakan dan Privasi</p>
+			<p class="footer-links">Syarat dan Ketentuan</p>
+		</div>
+		<div class="col-sm-6 col-lg-3 mb-3">
+			<div class="row">
+				<div class="col">
+					<h6 class="cust-title">Berkolaborasi</h6>
+					<img src="asset/berkolaborasi.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<h6 class="cust-title">Metode Pembayaran</h6>
+					<img src="asset/metodebayar.png" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="border-top: 1px solid #eeeeee; padding: 2% 10% 2% 10%">
+		<div class="col">
+			<p>Copyright &copy; 2020 - DigiTiket. All rights reserved</p>
+		</div>
+		<div class="col">
+			<div style="float: right; color: #a7a7a7">
+				<i class="fab fa-instagram"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-whatsapp"></i>&nbsp;&nbsp;&nbsp;<i class="fab fa-youtube"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>
